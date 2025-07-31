@@ -1,4 +1,4 @@
-# 🚀 VeriPol AI : AI-Powered Automated Insurance Claims Processing
+# 🚀 VeriPol.AI : AI-Powered Automated Insurance Claims Processing
 
 ## 📌 Problem Statement
 
@@ -9,7 +9,7 @@ Insurance claims processing is often **manual, time-consuming, and prone to huma
 - 😞 Customer Satisfaction  
 - ⚖️ Regulatory Compliance  
 
-**VeriPol AI** aims to streamline and automate this workflow using Artificial Intelligence and Generative AI.
+**VeriPol.AI** aims to streamline and automate this workflow using Artificial Intelligence and Generative AI.
 
 ---
 
@@ -33,7 +33,7 @@ Traditional insurance claim processing involves manually verifying:
 - Disease/treatment type  
 - Insurance exclusions and limits  
 
-VeriPol AI transforms this process using:
+VeriPol.AI transforms this process using:
 
 - **Natural Language Processing (NLP)** to understand documents  
 - **Embeddings & Vector Search** to match policies and bills semantically  
@@ -96,7 +96,7 @@ Then performs Exploratory Data Analysis (EDA) to identify trends and anomalies.
 ![System Architecture]
 ---
 
-## ⏱ VeriPol AI AI vs Traditional Process
+## ⏱ VeriPol.AI AI vs Traditional Process
 
 ![Time Comparison]
 
