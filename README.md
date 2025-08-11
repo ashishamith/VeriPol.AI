@@ -2,16 +2,7 @@
 
 ## 📌 Problem Statement
 
-Insurance claims processing is often **manual, time-consuming, and prone to human error**, which negatively impacts:
-
-- ⏱ Turnaround Time  
-- 💸 Operational Costs  
-- 😞 Customer Satisfaction  
-- ⚖️ Regulatory Compliance  
-
-**VeriPol.AI** aims to streamline and automate this workflow using Artificial Intelligence and Generative AI.
-
----
+Insurance claim processing is often time-consuming, requires manual verification of policies, and can cause delays in approvals. Customers frequently struggle to understand the terms of their insurance policies, leading to invalid or incomplete claims. Executives also spend significant time reviewing documents and validating claims, reducing operational efficiency. There is a need for an intelligent system that can automatically analyze claim requests, check them against policy rules, and provide instant, accurate feedback to both customers and staff.
 
 ## 🎯 Project Objective
 
@@ -134,10 +125,10 @@ The final AI-generated report includes:
 ## 🧰 Technologies Used
 
 - **Python** (Flask, LangChain, Pandas)  
-- **LLMs**: OpenAI / Gemini  
-- **Embeddings**: FAISS / OpenAI Embeddings  
-- **OCR**: EasyOCR / Tesseract  
-- **PDF Parsing**: PyPDF2, pdf2image  
+- **LLMs**: Groq API
+- **Embeddings**: FAISS 
+- **OCR**: EasyOCR 
+- **PDF Parsing**: PyPDF2,
 - **Frontend**: HTML/CSS (Jinja2 via Flask)  
 - **Deployment**: Docker / AWS (optional)
 
