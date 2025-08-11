@@ -37,7 +37,7 @@ Working Flow
 ## 🖥 Setup Instructions  
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/veripol-ai.git
+git clone https://github.com/ashishamith/VeriPol.AI
 cd veripol-ai
 
 # Install dependencies
