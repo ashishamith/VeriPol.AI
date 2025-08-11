@@ -28,6 +28,12 @@ Insurance claim processing is **slow**, often requiring **manual verification** 
 4. Groq API evaluates the claim’s validity  
 5. Chatbot returns instant decision & explanation
 
+
+Working Flow 
+
+<img width="1467" height="846" alt="Screenshot 2025-08-11 190259" src="https://github.com/user-attachments/assets/51ba4463-d96e-4599-8745-e0bb9510b3d3" />
+
+
 ## 🖥 Setup Instructions  
 ```bash
 # Clone repository
