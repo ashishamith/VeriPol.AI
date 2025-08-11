@@ -1,147 +1,41 @@
-# 🚀 VeriPol.AI : AI-Powered Automated Insurance Claims Processing
+# 🛡 VeriPol.AI — AI-Powered Insurance Claim Processing
 
-## 📌 Problem Statement
+## 📌 Overview  
+**VeriPol.AI** is an intelligent system designed to **automate insurance claim processing and policy verification**. It instantly analyzes claim requests, checks them against policy rules, and provides real-time feedback to both customers and executives. By removing manual bottlenecks, it speeds up approvals, reduces errors, and enhances customer satisfaction.
 
-Insurance claim processing is often time-consuming, requires manual verification of policies, and can cause delays in approvals. Customers frequently struggle to understand the terms of their insurance policies, leading to invalid or incomplete claims. Executives also spend significant time reviewing documents and validating claims, reducing operational efficiency. There is a need for an intelligent system that can automatically analyze claim requests, check them against policy rules, and provide instant, accurate feedback to both customers and staff.
+## 🚨 Problem Statement  
+Insurance claim processing is **slow**, often requiring **manual verification** that causes delays. Customers face confusion due to complex policy terms, leading to incomplete or invalid claims. Executives waste hours on repetitive checks. **VeriPol.AI** solves this by instantly analyzing claims, matching them with policy rules, and providing **accurate, instant decisions**.
 
-## 🎯 Project Objective
+## 🧰 Technologies Used  
+- **Python** (Flask for backend, Pandas for data handling)  
+- **Groq API** (LLM for natural language understanding)  
+- **FAISS** (semantic search for policy rules)  
+- **EasyOCR** (scanned document text extraction)  
+- **PyPDF2** (policy/claim PDF parsing)  
+- **HTML/CSS + Jinja2** (frontend UI)
 
-To build an intelligent AI-powered system that:
+## ⚙️ Features  
+- 📄 **Policy Understanding** – Reads & interprets insurance documents  
+- 📝 **Claim Validation** – Checks claims in real time against rules  
+- 📚 **Policy Simplification** – Explains terms in plain language  
+- ⚡ **Instant Feedback** – Supports both customers & staff  
+- 🔍 **OCR Support** – Reads scanned claim forms
 
-- 🧠 **Assesses claims** for validity using NLP & LLMs  
-- 💬 **Acts as a chatbot** to assist agents or customers in real-time  
-- 📘 **Answers policy-related questions** based on membership handbooks  
-- 📊 **Generates automated reports** for approvals, rejections, or fraud flags
+## 🚀 How It Works  
+1. User uploads claim documents (PDF or scanned image)  
+2. OCR & PDF parser extract claim and policy data  
+3. FAISS retrieves relevant clauses from policy rules  
+4. Groq API evaluates the claim’s validity  
+5. Chatbot returns instant decision & explanation
 
----
+## 🖥 Setup Instructions  
+```bash
+# Clone repository
+git clone https://github.com/yourusername/veripol-ai.git
+cd veripol-ai
 
-## 🌍 Real-World Context
+# Install dependencies
+pip install -r requirements.txt
 
-Traditional insurance claim processing involves manually verifying:
-
-- Customer identity  
-- Bills and invoices  
-- Disease/treatment type  
-- Insurance exclusions and limits  
-
-VeriPol.AI transforms this process using:
-
-- **Natural Language Processing (NLP)** to understand documents  
-- **Embeddings & Vector Search** to match policies and bills semantically  
-- **Large Language Models (LLMs)** to reason and generate verdicts  
-- **AI-Powered Reporting** to reduce approval times drastically
-
----
-
-## 🧠 System Workflow
-
-VeriPol AI operates in 4 major steps:
-
-### 1️⃣ Data Collection & EDA
-
-Automatically gathers and validates:
-
-- Claimant details (personal info, medical history)  
-- Previous claim records  
-- Policy handbooks and hospital bills  
-
-Then performs Exploratory Data Analysis (EDA) to identify trends and anomalies.
-
----
-
-### 2️⃣ Embedding Generation
-
-- Converts raw textual data into semantic embeddings  
-- Enables intelligent matching against policy documents, disease exclusions, etc.
-
----
-
-### 3️⃣ Query Execution & Report Generation
-
-- Uses **LLMs (e.g., OpenAI/Gemini)** to evaluate the claim  
-- Produces a **detailed claim assessment report** with explanations, reasoning, and suggested verdict
-
----
-
-### 4️⃣ Parsing & Final Output
-
-- Extracts actionable insights from LLM responses  
-- Outputs a structured verdict including:  
-  - ✅ Claim Validity  
-  - 💰 Claimable Amount  
-  - ❌ Rejection Reasons (if any)
-
----
-
-## 📥 Key Inputs Required
-
-- 📄 Insurance Handbook (PDF, Policy Terms)  
-- 💳 Previous Claims and Medical Bills  
-- 👤 Claimant Data (Name, Age, Condition)  
-- 🏥 Medical Records with Diagnosis and Treatments
-
----
-
-## 🧱 System Architecture
-
-![System Architecture]
----
-
-## ⏱ VeriPol.AI AI vs Traditional Process
-
-![Time Comparison]
-
-Traditional methods can take days — ClaimTrackr reduces it to minutes.
-
----
-
-## 💬 Chatbot Capabilities
-
-- Summarizes claim details instantly  
-- Validates claims in real time  
-- Responds to user questions based on handbook & policies  
-- Learns from previous claims and documents
-
----
-
-## 📽 Product Demo
-
-![Demo Screenshot]
-
----
-
-## 📄 Sample Output Report
-
-The final AI-generated report includes:
-
-- ✅ **Claim Verdict:** Approved or Rejected  
-- 📌 **Reason for Rejection:**  
-  - Claimed Amount > Allowed Amount  
-  - Name Mismatch  
-  - Disease under Exclusion List  
-
----
-
-## 🧰 Technologies Used
-
-- **Python** (Flask, LangChain, Pandas)  
-- **LLMs**: Groq API
-- **Embeddings**: FAISS 
-- **OCR**: EasyOCR 
-- **PDF Parsing**: PyPDF2,
-- **Frontend**: HTML/CSS (Jinja2 via Flask)  
-- **Deployment**: Docker / AWS (optional)
-
----
-
-## 🏁 Conclusion
-
-VeriPol AI revolutionizes traditional insurance processing by offering:
-
-
-- 🔁 Automation  
-- 📉 Reduced Errors  
-- 🧠 Intelligent Decision-Making  
-- 🕒 Real-Time Support  
-
-By combining **AI + Gen AI + Automation**, this project is ready for real-world, production-grade deployments in the **insurance and finance domain**.
+# Run application
+python app.py
